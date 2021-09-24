@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="#">
+        <table>
+            <tr>
+                <th>Prénom :</th>
+                <td><input type="text" name="Prénom" placeholder="entrez votre prénom" maxlength="16" required></td>
+            </tr>
+            <tr>
+                <th>Nom :</th>
+                <td><input type="text" name="Nom" placeholder="entrez votre nom" maxlength="16" required></td>
+            </tr>
+            <tr>
+                <th>Votre age :</th>
+                <td><input type="number" name="age" placeholder="age"  min="0" max="118" required></td>
+            </tr>
+            <tr>
+                <th>Votre sexe</th>
+                <td><input type="radio" name="sexe" value="Femme" required/> Femme 
+                    <input type="radio" name="sexe" value="Homme" required/> Homme</td>
+            </tr>
+            <tr>
+                <th>Votre e-mail :</th>
+                <td><input type="email" name="votre email" placeholder="entrez votre e-mail" required></td>
+            </tr>
+            <tr>
+                <th>Votre adresse :</th>
+                <td><input type="text" name="votre adresse" placeholder="entrez votre adresse" maxlength="100" required></td>
+            </tr>
+            <tr>
+                <th>Code Postal :</th>
+                <td><input type="text" name="code pastal" placeholder="entrez vote code postal" maxlength="5" minlength="5" pattern="[0-9]+"  required></td>
+            </tr>
+            <tr>
+                <th>votre ville :</th>
+                <td><select name="votre ville">
+                    <option>-----</option>
+                    <option>Arras</option>
+                    <option>Béthune</option>
+                    <option>Boulogne sue Mer</option>
+                    <option>Dunkerque</option>
+                    <option>Lille</option>
+                    <option>Tourcoing</option>
+                </select>
+            </tr>
+            <tr>
+                <th>Métiers éxercer :</th>
+                <td><select name="Métiers">
+                    <option>-----</option>
+                    <option>Developpeur</option>
+                    <option>Front-end</option>
+                    <option>Back-end</option>
+                    <option>Annaliste</option>
+                    <option>Infographiste</option>
+                </select>
+            </tr>
+            <tr>
+                <th>Nationalité :</th>
+                <td><select name="Nationalié">
+                    <option>Fançais(e)</option>
+                    <option>Belge</option>
+                    <option>Allemand</option>
+                    <option>Suisse</option>
+                    <option>Espagnol</option>
+                    <option>Italien</option>
+                </select>
+            </tr>
+            <tr>
+                <th>Date de naissance</th>
+                <td><input type="number" name="age" placeholder="jour" step="1" min="0" max="30" required>
+                <input type="number" name="age" placeholder="moi" step="1"  min="0" max="12" required>
+                <input type="number" name="age" placeholder="année" step="1"  min="0" max="2021" required></td>
+            </tr>
+            <tr>
+                <th>Numéro de cécurité social :</th>
+                <td><input type="text" name="cécurité social" placeholder="entrez votre num ici" pattern="[0-9]+" maxlength="13" minlength="13" required></td>
+            </tr>
+            <tr>
+                <th>Votre numéro de passeport :</th>
+                <td><input type="text" name="numéro de passeport" placeholder="entrez votre num ici" maxlength="9" minlength="9" required></td>
+            </tr>
+            <tr>
+                <th>Date de validité du passport</th>
+                <td><input type="number" name="validité" placeholder="moi" step="1"  min="0" max="12" required>
+                    <input type="number" name="validité" placeholder="année" step="1"  min="2021" max="2050" required></td>
+            </tr>
+            <tr>
+               
+                <td><input type="submit" value="Soumettre"/></td>
+                <td><input type="reset" value="réinitializer"/></td>
+            </tr>
+        </table><!--form-->
+          
+    </form>
+</body>
+</html>
