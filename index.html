@@ -9,38 +9,38 @@
 <body>
     <form method="POST" action="#">
         <table>
-            <tr>
-                <th>Prénom :</th>
-                <td><input type="text" name="Prénom" placeholder="entrez votre prénom" maxlength="16" required></td>
-            </tr>
-            <tr>
-                <th>Nom :</th>
-                <td><input type="text" name="Nom" placeholder="entrez votre nom" maxlength="16" required></td>
-            </tr>
-            <tr>
-                <th>Votre age :</th>
-                <td><input type="number" name="age" placeholder="age"  min="0" max="118" required></td>
-            </tr>
-            <tr>
-                <th>Votre sexe</th>
-                <td><input type="radio" name="sexe" value="Femme" required/> Femme 
-                    <input type="radio" name="sexe" value="Homme" required/> Homme</td>
-            </tr>
-            <tr>
-                <th>Votre e-mail :</th>
-                <td><input type="email" name="votre email" placeholder="entrez votre e-mail" required></td>
-            </tr>
-            <tr>
-                <th>Votre adresse :</th>
-                <td><input type="text" name="votre adresse" placeholder="entrez votre adresse" maxlength="100" required></td>
-            </tr>
-            <tr>
-                <th>Code Postal :</th>
-                <td><input type="text" name="code pastal" placeholder="entrez vote code postal" maxlength="5" minlength="5" pattern="[0-9]+"  required></td>
-            </tr>
-            <tr>
-                <th>votre ville :</th>
-                <td><select name="votre ville">
+            
+                <label for="prenom" >Votre prénom</label>
+                <input type="text" id="prenom" name="Prénom" placeholder="entrez votre prénom" maxlength="16" required>
+            
+            
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="Nom" placeholder="entrez votre nom" maxlength="16" required>
+            
+            
+                <label for="age">Votre age</label>
+                <input type="number" id="age" name="age" placeholder="age"  min="0" max="118" required>
+            
+            
+                <label for="civilitee">Civilitée</label>
+                <input type="radio" name="sexe" value="Femme" required/> Femme 
+                    <input type="radio" id="civilitee" name="sexe" value="Homme" required/> Homme
+            
+            
+                <label for="email">Votre email</label>
+                <input type="email" id="email" name="votre email" placeholder="entrez votre e-mail" required>
+            
+            
+                <label for="adresse">Votre adresse</label>
+                <input type="text" name="votre adresse" placeholder="entrez votre adresse" maxlength="100" required>
+            
+            
+                <label for="code postal">Code postal</label>
+                <input type="text" id="code postale" name="code pastal" placeholder="entrez vote code postal" maxlength="5" minlength="5" pattern="[0-9]+"  required>
+            
+            
+                <label for="votre ville">Votre ville</label>
+                <select id="votre ville" name="votre ville">
                     <option>-----</option>
                     <option>Arras</option>
                     <option>Béthune</option>
@@ -49,10 +49,10 @@
                     <option>Lille</option>
                     <option>Tourcoing</option>
                 </select>
-            </tr>
-            <tr>
-                <th>Métiers éxercer :</th>
-                <td><select name="Métiers">
+            
+            
+                <label for="metiers">Votre métier</label>
+                <select id="metiers" name="Métiers">
                     <option>-----</option>
                     <option>Developpeur</option>
                     <option>Front-end</option>
@@ -60,10 +60,10 @@
                     <option>Annaliste</option>
                     <option>Infographiste</option>
                 </select>
-            </tr>
-            <tr>
-                <th>Nationalité :</th>
-                <td><select name="Nationalié">
+            
+            
+                <label for="Nationalitee">Nationalitée</label>
+                <select id="nationalitee" name="Nationalié">
                     <option>Fançais(e)</option>
                     <option>Belge</option>
                     <option>Allemand</option>
@@ -71,31 +71,32 @@
                     <option>Espagnol</option>
                     <option>Italien</option>
                 </select>
-            </tr>
-            <tr>
-                <th>Date de naissance</th>
-                <td><input type="number" name="age" placeholder="jour" step="1" min="0" max="30" required>
-                <input type="number" name="age" placeholder="moi" step="1"  min="0" max="12" required>
-                <input type="number" name="age" placeholder="année" step="1"  min="0" max="2021" required></td>
-            </tr>
-            <tr>
-                <th>Numéro de cécurité social :</th>
-                <td><input type="text" name="cécurité social" placeholder="entrez votre num ici" pattern="[0-9]+" maxlength="13" minlength="13" required></td>
-            </tr>
-            <tr>
-                <th>Votre numéro de passeport :</th>
-                <td><input type="text" name="numéro de passeport" placeholder="entrez votre num ici" maxlength="9" minlength="9" required></td>
-            </tr>
-            <tr>
-                <th>Date de validité du passport</th>
-                <td><input type="number" name="validité" placeholder="moi" step="1"  min="0" max="12" required>
-                    <input type="number" name="validité" placeholder="année" step="1"  min="2021" max="2050" required></td>
-            </tr>
-            <tr>
-               
-                <td><input type="submit" value="Soumettre"/></td>
-                <td><input type="reset" value="réinitializer"/></td>
-            </tr>
+            
+            
+                <label for="date de naissance">Date de naissance</label>
+                <input type="number" id="date de naissance" name="age" placeholder="jour" step="1" min="0" max="30" required>
+                <input type="number" id="date de naissance" name="age" placeholder="moi" step="1"  min="0" max="12" required>
+                <input type="number" id="date de naissance" name="age" placeholder="année" step="1"  min="0" max="2021" required>
+            
+            
+                <label for="num cecu">Numéro de cécurité social</label>
+                <input type="text" id="num secu" name="cécurité social" placeholder="entrez votre num ici" pattern="[0-9]+" maxlength="13" minlength="13" required>
+            
+            
+                <label for="num passp">Votre numéro de passeport</label>
+                <input type="text" id="num passp" name="numéro de passeport" placeholder="entrez votre num ici" maxlength="9" minlength="9" pattern="[0-9a-zA-Z]+" required>
+            
+            
+                <label for="validite">Date de validité du passport</label>
+                <input type="number" id="validite" name="validité" placeholder="moi" step="1"  min="0" max="12" required>
+                    <input type="number" id="validite" name="validité" placeholder="année" step="1"  min="2021" max="2050" required>
+            
+            
+               <label for="boutenvoi"></label>
+                <input type="submit" id="boutenvoi" value="Soumettre"/>
+                <label for="boutreset"></label>
+                <input type="reset" id="boutreset" value="réinitializer"/>
+            
         </table><!--form-->
           
     </form>
